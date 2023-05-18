@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import MainText from "./components/practice/Practice";
+import { SecondText } from "./components/practice2/Practice2";
+import CustomButton from "./components/customButton/CustomButton";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainText />
+      <SecondText />
+      <CustomButton name="Save" type="primary" />
+      <CustomButton name="Delete" type="warning" />
     </div>
   );
 }
